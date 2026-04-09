@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bstnrmv7e6tjs"]
+
+[ext_resource type="Script" uid="uid://5jllaxloin8q" path="res://Scenes/easy_enemy.gd" id="1_3ecx3"]
+[ext_resource type="Texture2D" uid="uid://43amorwh4brn" path="res://icon.svg" id="2_raxxc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_whnch"]
+size = Vector2(126, 127)
+
+[node name="EasyEnemy" type="CharacterBody2D" unique_id=333414146 groups=["enemy"]]
+collision_layer = 4
+collision_mask = 2
+motion_mode = 1
+script = ExtResource("1_3ecx3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=27294799]
+self_modulate = Color(0.27579287, 0.8644211, 3.85046e-07, 1)
+texture = ExtResource("2_raxxc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1845267469]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_whnch")

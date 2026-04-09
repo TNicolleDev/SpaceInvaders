@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://djqalegqjr0bj"]
+
+[ext_resource type="PackedScene" uid="uid://darjgb3fu5rx" path="res://Scenes/player.tscn" id="1_8ffim"]
+[ext_resource type="PackedScene" uid="uid://bstnrmv7e6tjs" path="res://Scenes/easy_enemy.tscn" id="2_8ffim"]
+
+[node name="Level1" type="Node2D" unique_id=415901614]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=867957498]
+z_index = -10
+offset_right = 1164.0
+offset_bottom = 664.0
+color = Color(0.15199637, 0.15199634, 0.15199634, 1)
+
+[node name="Player" parent="." unique_id=1069386765 instance=ExtResource("1_8ffim")]
+position = Vector2(533, 561)
+
+[node name="EasyEnemy" parent="." unique_id=333414146 instance=ExtResource("2_8ffim")]
+position = Vector2(164, 167)
